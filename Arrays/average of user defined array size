@@ -1,0 +1,22 @@
+// program to store user input ints in an array whose size is user defined and then return the average of all elements
+#include <stdio.h>
+
+int main() {
+    printf("enter array size");
+    int size;
+    scanf("%d",&size);
+    int arr1[size];
+    float avg;
+    int sum=0;
+    int i;
+    for (i=0;i<=size-1;i++)
+    {
+        printf("enter next element");
+        scanf("%d",&arr1[i]);
+        sum=sum+arr1[i];
+    }
+    avg=(float)sum/size;
+    printf("%f",avg);
+
+    return 0;
+}
